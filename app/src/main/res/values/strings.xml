@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">SantaFesacho</string>
+    <string name="titulo">SantaFesacho</string>
+    <string name="username">Usuario</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="usuario">Usuario</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="Perfil">Mi Perfil</string>
+    <string name="salir">Salir</string>
+    <string name="Rusuario">Nombre de Usuario</string>
+    <string name="Rcontrasena">Ingrese contraseña</string>
+    <string name="Rrepcontrasena">Repita la contraseña</string>
+    <string name="correo">Correo electronico</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="Registrarse">Registrarse</string>
+    <string name="Username">Nombre de usuario:</string>
+    <string name="Contra">Contraseña:</string>
+    <string name="mail">Correo:</string>
+    <string name="Volver">Volver</string>
+    <string name="Hoteles">Hoteles</string>
+    <string name="Atractivos">Atractivos</string>
+    <string name="Restaurantes">Restaurantes</string>
+    <string name="Lugares">Lugares</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_hotel">Hoteles</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="Inicio">Inicio</string>
+    <string name="title_activity_lugares">Lugares</string>
+    <string name="title_activity_restaurantes">Restaurantes</string>
+    <string name="HotelColonial">Colonial Nueva Granada</string>
+    <string name="THotelColonial">Dirección: Cl. 9 #7-47, Santa Fé de Antioquia, Antioquia, Teléfono: 305 3029978</string>
+    <string name="HotelMariscal">Mariscal Robledo</string>
+    <string name="THotelMariscal">Dirección: Cra. 12, Santa Fé de Antioquia, Antioquia, Teléfono: (4) 8531111</string>
+    <string name="HotelPorton">Porton Del Sol</string>
+    <string name="THotelPorton">Dirección: 05001100, Santa Fé de Antioquia, Antioquia, Teléfono: (4) 4483510</string>
+    <string name="Main">Principal</string>
+    <string name="RestLacomedia">La Comedia</string>
+    <string name="TrestLacomedia">Dirección: Cra. 8 #10103, Santa Fé de Antioquia, Antioquia, Teléfono: 301 5963032</string>
+    <string name="RestPorton">El Porton Del Parque</string>
+    <string name="Trestporton">Dirección: Cl. 10 #11-3, Santa Fé de Antioquia, Antioquia</string>
+    <string name="RestNuesp">Nueva España</string>
+    <string name="Trestnuesp">Calle 10 Numero 12-48, Santa Fe de Antioquia 057050, Colombia, Tel:+(57)8532770</string>
+    <string name="LugPa">Parque Central</string>
+    <string name="lugpue">Puente de Occidente</string>
+    <string name="LugCalle">Calles Coloniales</string>
+    <string name="tama">Festival de cine: Es una fiesta cinematográfica que se realiza durante 5 días. Se ha llevado a cabo en 12 ocasiones y en la actualidad se prepara la número 13.</string>
+    <string name="semana">Semana santa: Con más de 350 años, la Semana Santa mayor de la Ciudad Madre es la más antigua del departamento y una de las más solemnes y bellas de todo el país.</string>
+    <string name="preparate">Preparate para:</string>
+</resources>

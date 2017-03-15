@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ricardo.santafesacho.LugaresActivity">
+    <item
+        android:id="@+id/mMain"
+        android:title="@string/Main"/>
+    <item
+        android:id="@+id/mPerfil"
+        android:title="@string/Perfil"/>
+    <item
+        android:id="@+id/mRestaurantes"
+        android:title="@string/Restaurantes" />
+    <item
+        android:id="@+id/mHoteles"
+        android:title="@string/Hoteles"/>
+    <item
+        android:id="@+id/mLogOut"
+        android:title="@string/salir" />
+
+</menu>
