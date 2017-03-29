@@ -5,12 +5,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingLeft="65dp"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="com.example.ricardo.santafesacho.RegistroActivity"
         android:orientation="vertical"
-        android:background="@color/white">
+        android:background="@drawable/casa">
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,7 +24,7 @@
                 android:layout_height="match_parent"
                 android:hint="@string/Rusuario"
                 android:textColor="@color/green"
-                android:gravity="center"
+                android:gravity="right"
                 android:id="@+id/eRUsuario"/>
 
         </LinearLayout>
@@ -37,7 +39,7 @@
                 android:layout_height="match_parent"
                 android:hint="@string/Rcontrasena"
                 android:textColor="@color/green"
-                android:gravity="center"
+                android:gravity="right"
                 android:id="@+id/eRPassword"/>
 
         </LinearLayout>
@@ -52,7 +54,7 @@
                 android:layout_height="match_parent"
                 android:hint="@string/Rrepcontrasena"
                 android:textColor="@color/green"
-                android:gravity="center"
+                android:gravity="right"
                 android:id="@+id/eRRepPassword"/>
 
         </LinearLayout>
@@ -67,7 +69,7 @@
                 android:layout_height="match_parent"
                 android:hint="@string/correo"
                 android:textColor="@color/green"
-                android:gravity="center"
+                android:gravity="right"
                 android:id="@+id/eCorreo"/>
 
         </LinearLayout>
@@ -79,23 +81,25 @@
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="30dp"
                 android:layout_weight="1"
                 android:text="@string/cancelar"
                 android:gravity="center"
                 android:background="@color/greenyellow"
                 android:id="@+id/bCancelar"
-                android:layout_marginRight="5dp"/>
+                android:layout_marginRight="5dp"
+                android:layout_gravity="bottom"/>
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="30dp"
                 android:layout_weight="1"
                 android:text="@string/Registrarse"
                 android:gravity="center"
                 android:background="@color/greenyellow"
                 android:id="@+id/bRegistrarse"
-                android:layout_marginLeft="5dp"/>
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="bottom"/>
 
         </LinearLayout>
 

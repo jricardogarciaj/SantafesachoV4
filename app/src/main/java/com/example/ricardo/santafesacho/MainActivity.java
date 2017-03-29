@@ -18,15 +18,10 @@ public class MainActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //Toast.makeText(this, "onCreate", Toast.LENGTH_SHORT).show();
         Bundle extras = getIntent().getExtras();
         username = extras.getString("username");
         correo = extras.getString("correo");
         password = extras.getString("password");
-        //intent = new Intent(MainActivity.this, LoginActivity.class);
-        //intent.putExtra("username",username);
-        //intent.putExtra("password",password);
-        //intent.putExtra("correo",correo);
     }
 
     @Override

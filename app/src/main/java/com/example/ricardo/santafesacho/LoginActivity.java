@@ -23,6 +23,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
+        this.supportRequestWindowFeature(getWindow().FEATURE_NO_TITLE);
         setContentView(R.layout.activity_login);
 
         eUsuario = (EditText) findViewById(R.id.eUsuario);
@@ -49,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (eUsuario.getText().toString().equals(username) && eContrasena.getText().toString().equals(password)) {
                     //registrado = "si";
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, NavDrawerActivity.class);
                     intent.putExtra("username", username);
                     intent.putExtra("correo", correo);
                     intent.putExtra("password", password);

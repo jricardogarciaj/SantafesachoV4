@@ -8,7 +8,7 @@
     <string name="ingresar">Login</string>
     <string name="registrarse">Register</string>
     <string name="Perfil">My Profile</string>
-    <string name="salir">LogoUt</string>
+    <string name="salir">LogOut</string>
     <string name="Rusuario">Username</string>
     <string name="Rcontrasena">Password</string>
     <string name="Rrepcontrasena">Password again</string>
@@ -37,7 +37,7 @@
     <string name="THotelMariscal">Direction: Cra. 12, Santa Fé de Antioquia, Antioquia, Telephone: (4) 8531111</string>
     <string name="HotelPorton">Porton Del Sol</string>
     <string name="THotelPorton">Direction: 05001100, Santa Fé de Antioquia, Antioquia, Telephone: (4) 4483510</string>
-    <string name="Main">Principal</string>
+    <string name="Main">Main</string>
     <string name="RestLacomedia">La Comedia</string>
     <string name="TrestLacomedia">Direction: Cra. 8 #10103, Santa Fé de Antioquia, Antioquia, Telephone: 301 5963032</string>
     <string name="RestPorton">El Porton Del Parque</string>
@@ -50,4 +50,30 @@
     <string name="tama">Cine festival: is a cinematography party during five days. There was 12 editions and it is coming the 13th, come and fun with us.</string>
     <string name="semana">Holly Week: with more than 350 years of history, our Holly week celebration is the most antique of the department and one of the most beautifoul of the country.</string>
     <string name="preparate">Join us to:</string>
+
+    <string name="title_activity_nav_drawer">Pricipal</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="Bares">Bares</string>
+    <string name="title_activity_nav_hotel">Hotels</string>
+    <string name="title_activity_nav_lugares">Places</string>
+    <string name="title_activity_nav_restaurantes">Restaurants</string>
+    <string name="title_activity_nav_perfil">Profile</string>
+    <string name="title_activity_nav_festivales">Festivals</string>
+    <string name="title_activity_fest1">Festivals</string>
+    <string name="title_activity_fest2">Festivals</string>
+    <string name="title_activity_fest3">Festivals</string>
+    <string name="Interes1">Dia de los Diablitos</string>
+    <string name="desInteres1">El 28 de diciembre.</string>
+    <string name="fechaInteres1">Diciembre</string>
+    <string name="Festivales">Festivals</string>
+    <string name="Santa">Semana Santa</string>
+    <string name="Diablitos">Festival de los Diablitos</string>
+    <string name="TDiablitos">del 22 al 31 de diciembre se celebran las fiestas tradicionales de los diablitos. Estas fiestas datan de 1653 y su inicio se dio en una época en la cual el municipio estaba dividido en grandes haciendas, trabajadas por esclavos que disponían de un solo día de descanso anual, que normamente era el 28 de diciembre.</string>
+    <string name="holly">Según se deduce de la lectura de lo que nos dejaron escrito los viejos historiadores, la traída de imágenes y vida de personajes, bien parece que los orígenes de procesiones de la semana santa se remonta a la mitad del siglo XVII, tiempo en que se fueron organizando paulatinamente a medida que se conformaban cofradías y se levantaban altares en los templos dedicados a los santos.</string>
+    <string name="Tamarindos">Festival de los Tamarindos</string>
+    <string name="TTamarindos">Las fiestas del tamarindo se llevan a cabo todos los años en los municipios de occidente, donde la alegria y los grandes eventos se toman las calles florecientes y amarillas por los frutos de la tierra.</string>
+
 </resources>

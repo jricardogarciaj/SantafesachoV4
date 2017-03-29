@@ -12,6 +12,12 @@
     android:orientation="vertical"
     android:background="@color/white">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/silueta"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -24,29 +30,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:textColor="@color/green"
+        android:textColor="@color/black"
         android:textSize="20dp"
         android:gravity="center"
         android:layout_weight="1"
         android:id="@+id/tUsername"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:text="@string/Contra"
-        android:textColor="@color/green"
-        android:textSize="20dp"
-        android:gravity="center"
-        android:layout_weight="1"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:textColor="@color/green"
-        android:textSize="20dp"
-        android:gravity="center"
-        android:layout_weight="1"
-        android:id="@+id/tPassword"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -60,7 +48,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:textColor="@color/green"
+        android:textColor="@color/black"
         android:textSize="20dp"
         android:gravity="center"
         android:layout_weight="1"

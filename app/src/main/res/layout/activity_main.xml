@@ -4,12 +4,8 @@
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="com.example.ricardo.santafesacho.MainActivity"
-        android:background="@color/white"
+        android:background="@color/green"
         android:orientation="vertical">
 
         <LinearLayout
@@ -18,11 +14,13 @@
             android:layout_marginBottom="10dp">
 
             <TextView
+                android:layout_marginTop="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:text="@string/preparate"
                 android:textSize="40dp"
-                android:textColor="@color/green" />
+                android:textColor="@color/white" />
         </LinearLayout>
 
         <LinearLayout
@@ -44,9 +42,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:text="@string/tama"
                     android:textSize="14dp"
-                    android:textColor="@color/green" />
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"/>
 
             </LinearLayout>
 
@@ -55,21 +55,24 @@
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_marginLeft="10dp">
+                android:layout_marginLeft="1dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/semana"
                     android:textSize="14dp"
-                    android:textColor="@color/green" />
+                    android:textColor="@color/white"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="9dp"/>
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:src="@drawable/tama"
                     android:layout_marginTop="2dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp"/>
 
             </LinearLayout>
 

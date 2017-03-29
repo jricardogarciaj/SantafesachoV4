@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mMain"
+            android:title="@string/Main"
+            android:icon="@drawable/imain"/>
+        <item
+            android:id="@+id/mLugares"
+            android:title="@string/Lugares"
+            android:icon="@drawable/ilugares"/>
+        <item
+            android:id="@+id/mHoteles"
+            android:title="@string/Hoteles"
+            android:icon="@drawable/ihotel"/>
+        <item
+            android:id="@+id/mFestivales"
+            android:title="@string/Festivales"
+            android:icon="@drawable/ibar"/>
+        <item
+            android:id="@+id/mPerfil"
+            android:title="@string/Perfil"
+            android:icon="@drawable/iperfil"/>
+        <item
+            android:id="@+id/mLogOut"
+            android:title="@string/salir" />
+    </group>
+
+</menu>

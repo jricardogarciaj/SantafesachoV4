@@ -12,9 +12,9 @@ public class PerfilActivity extends AppCompatActivity {
 
     Intent intent;
     TextView tUsername;
-    TextView tPassword;
+    //TextView tPassword;
     TextView tCorreo;
-    String username, correo, password="*******", registrado="si";
+    String username, correo, password;
     //int requestcode =1234;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,14 +23,14 @@ public class PerfilActivity extends AppCompatActivity {
         setContentView(R.layout.activity_perfil);
 
         tUsername = (TextView) findViewById(R.id.tUsername);
-        tPassword = (TextView) findViewById(R.id.tPassword);
+        //tPassword = (TextView) findViewById(R.id.tPassword);
         tCorreo = (TextView) findViewById(R.id.tCorreo);
         Bundle extras = getIntent().getExtras();
         username = extras.getString("username");
-        //password = extras.getString("password");
+        password = extras.getString("password");
         correo = extras.getString("correo");
         tUsername.setText(username);
-        tPassword.setText(password);
+        //tPassword.setText(password);
         tCorreo.setText(correo);
 
         //intent = new Intent(PerfilActivity.this, LoginActivity.class);
