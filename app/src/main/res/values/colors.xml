@@ -141,6 +141,7 @@
 	<item name="snow" type="color">#fffafa</item>
 	<item name="ivory" type="color">#fffff0</item>
 	<item name="white" type="color">#ffffff</item>
+	<item name="verdesitosuave" type="color">#ffffff</item>
     
 	
 	<integer-array name="EditColors">
@@ -283,6 +284,7 @@
 		<item>@color/snow </item>
 		<item>@color/ivory </item>
 		<item>@color/white </item>
+		<item>@color/verdesitosuave </item>
 	</integer-array>
 	
 </resources>

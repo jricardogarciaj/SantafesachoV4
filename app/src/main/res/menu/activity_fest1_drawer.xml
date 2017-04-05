@@ -3,13 +3,9 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/mMain"
-            android:title="@string/Main"
-            android:icon="@drawable/imain"/>
-        <item
             android:id="@+id/mFestivales"
             android:title="@string/Festivales"
-            android:icon="@drawable/ibar"/>
+            android:icon="@drawable/ieventos"/>
         <item
             android:id="@+id/mHoteles"
             android:title="@string/Hoteles"
@@ -22,6 +18,10 @@
             android:id="@+id/mLugares"
             android:title="@string/Lugares"
             android:icon="@drawable/ilugares"/>
+        <item
+            android:id="@+id/mMain"
+            android:title="@string/Main"
+            android:icon="@drawable/iubicate"/>
         <item
             android:id="@+id/mPerfil"
             android:title="@string/Perfil"

@@ -48,6 +48,19 @@ public class Fest2Activity extends AppCompatActivity
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+
+        View hView = navigationView.getHeaderView(0);
+
+        eUsuario = (TextView) hView.findViewById(R.id.f2usuario);
+        eCorreo = (TextView) hView.findViewById(R.id.f2correo);
+
+        Bundle extras = getIntent().getExtras();
+        eUsuario.setText(extras.getString("username"));
+        eCorreo.setText(extras.getString("correo"));
+
+        username = extras.getString("username");
+        correo = extras.getString("correo");
+
         navigationView.setNavigationItemSelectedListener(this);
     }
 

@@ -9,6 +9,11 @@
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -51,6 +56,56 @@
         <activity
             android:name=".NavDrawerActivity"
             android:label="@string/title_activity_nav_drawer"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+
+        <activity
+            android:name=".NavHotelActivity"
+            android:label="@string/title_activity_nav_hotel"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NavLugaresActivity"
+            android:label="@string/title_activity_nav_lugares"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NavRestaurantesActivity"
+            android:label="@string/title_activity_nav_restaurantes"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NavPerfilActivity"
+            android:label="@string/title_activity_nav_perfil"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NavFestivalesActivity"
+            android:label="@string/title_activity_nav_festivales"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Fest1Activity"
+            android:label="@string/title_activity_fest1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Fest2Activity"
+            android:label="@string/title_activity_fest2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Fest3Activity"
+            android:label="@string/title_activity_fest3"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -65,40 +120,8 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" />
-        <activity
-            android:name=".NavHotelActivity"
-            android:label="@string/title_activity_nav_hotel"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".NavLugaresActivity"
-            android:label="@string/title_activity_nav_lugares"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".NavRestaurantesActivity"
-            android:label="@string/title_activity_nav_restaurantes"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".NavPerfilActivity"
-            android:label="@string/title_activity_nav_perfil"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".NavFestivalesActivity"
-            android:label="@string/title_activity_nav_festivales"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Fest1Activity"
-            android:label="@string/title_activity_fest1"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Fest2Activity"
-            android:label="@string/title_activity_fest2"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Fest3Activity"
-            android:label="@string/title_activity_fest3"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".MapaActivity"
+            android:label="@string/title_activity_mapa" />
     </application>
 
 </manifest>

@@ -41,13 +41,25 @@ public class Fest3Activity extends AppCompatActivity
             }
         });*/
 
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        View hView = navigationView.getHeaderView(0);
+
+        eUsuario = (TextView) hView.findViewById(R.id.f3usuario);
+        eCorreo = (TextView) hView.findViewById(R.id.f3correo);
+
+        Bundle extras = getIntent().getExtras();
+        eUsuario.setText(extras.getString("username"));
+        eCorreo.setText(extras.getString("correo"));
+
+        username = extras.getString("username");
+        correo = extras.getString("correo");
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
 

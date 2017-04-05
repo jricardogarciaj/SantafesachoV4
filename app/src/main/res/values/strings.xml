@@ -50,7 +50,7 @@
     <string name="tama">Festival de cine: Es una fiesta cinematográfica que se realiza durante 5 días. Se ha llevado a cabo en 12 ocasiones y en la actualidad se prepara la número 13.</string>
     <string name="semana">Semana santa: Con más de 350 años, la Semana Santa mayor de la Ciudad Madre es la más antigua del departamento y una de las más solemnes y bellas de todo el país.</string>
     <string name="preparate">Preparate para:</string>
-    <string name="title_activity_nav_drawer">Pricipal</string>
+    <string name="title_activity_nav_drawer">Ubicate</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -60,18 +60,32 @@
     <string name="title_activity_nav_lugares">Lugares</string>
     <string name="title_activity_nav_restaurantes">Restaurantes</string>
     <string name="title_activity_nav_perfil">Perfil</string>
-    <string name="title_activity_nav_festivales">Festivales</string>
-    <string name="title_activity_fest1">Festivales</string>
-    <string name="title_activity_fest2">Festivales</string>
-    <string name="title_activity_fest3">Festivales</string>
+    <string name="title_activity_nav_festivales">Eventos y noticias</string>
+    <string name="title_activity_fest1">Eventos</string>
+    <string name="title_activity_fest2">Eventos</string>
+    <string name="title_activity_fest3">Eventos</string>
     <string name="Interes1">Dia de los Diablitos</string>
     <string name="desInteres1">El 28 de diciembre.</string>
     <string name="fechaInteres1">Diciembre</string>
-    <string name="Festivales">Festivales</string>
+    <string name="Festivales">Eventos</string>
     <string name="Santa">Semana Santa</string>
     <string name="Diablitos">Festival de los Diablitos</string>
     <string name="TDiablitos">del 22 al 31 de diciembre se celebran las fiestas tradicionales de los diablitos. Estas fiestas datan de 1653 y su inicio se dio en una época en la cual el municipio estaba dividido en grandes haciendas, trabajadas por esclavos que disponían de un solo día de descanso anual, que normamente era el 28 de diciembre.</string>
     <string name="holly">Según se deduce de la lectura de lo que nos dejaron escrito los viejos historiadores, la traída de imágenes y vida de personajes, bien parece que los orígenes de procesiones de la semana santa se remonta a la mitad del siglo XVII, tiempo en que se fueron organizando paulatinamente a medida que se conformaban cofradías y se levantaban altares en los templos dedicados a los santos.</string>
     <string name="Tamarindos">Festival de los Tamarindos</string>
     <string name="TTamarindos">Las fiestas del tamarindo se llevan a cabo todos los años en los municipios de occidente, donde la alegria y los grandes eventos se toman las calles florecientes y amarillas por los frutos de la tierra.</string>
+    <string name="title_activity_mapa">Map</string>
+    <string name="title_activity_mapa_w">MapaWActivity</string>
+    <string name="intro_text">Long click to exit the map.</string>
+    <string name="saludo">En Santa Fe de Antioquia podes encontrar:</string>
+    <string name="Ubicate">Ubicate</string>
+    <string name="verenmapa">Ver en mapa</string>
+
+    <string name="Dessanta">Con más de 350 años, es una de las más solemnes y bellas de todo el país.</string>
+    <string name="Destama">Acontecida anualmente en el occidente en el mes de Agosto.</string>
+    <string name="Desdiablo">Del 22 al 31 de diciembre se celebran las fiestas tradicionales de los diablitos.</string>
+    <string name="Abril">Abril</string>
+    <string name="Agosto">Agosto</string>
+    <string name="Diciembre">Diciembre</string>
+
 </resources>

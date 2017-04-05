@@ -23,6 +23,8 @@ public class Fest1Activity extends AppCompatActivity
 
     String username,correo;
     TextView eUsuario,eCorreo;
+    //Intent intent;
+
 
     Intent intent;
     @Override
@@ -49,6 +51,19 @@ public class Fest1Activity extends AppCompatActivity
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+
+        View hView = navigationView.getHeaderView(0);
+
+        eUsuario = (TextView) hView.findViewById(R.id.f1usuario);
+        eCorreo = (TextView) hView.findViewById(R.id.f1correo);
+
+        Bundle extras = getIntent().getExtras();
+        eUsuario.setText(extras.getString("username"));
+        eCorreo.setText(extras.getString("correo"));
+
+        username = extras.getString("username");
+        correo = extras.getString("correo");
+
         navigationView.setNavigationItemSelectedListener(this);
     }
 
@@ -109,7 +124,7 @@ public class Fest1Activity extends AppCompatActivity
         else if (id == R.id.mFestivales) {
             intent= new Intent(Fest1Activity.this, NavFestivalesActivity.class);
             intent.putExtra("username",username);
-            intent.putExtra("email",correo);
+            intent.putExtra("correo",correo);
             startActivity(intent);
             finish();
         }

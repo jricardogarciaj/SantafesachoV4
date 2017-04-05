@@ -51,29 +51,41 @@
     <string name="semana">Holly Week: with more than 350 years of history, our Holly week celebration is the most antique of the department and one of the most beautifoul of the country.</string>
     <string name="preparate">Join us to:</string>
 
-    <string name="title_activity_nav_drawer">Pricipal</string>
+    <string name="title_activity_nav_drawer">Where am i?</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="title_activity_maps">Map</string>
-    <string name="Bares">Bares</string>
+    <string name="Bares">Bars</string>
     <string name="title_activity_nav_hotel">Hotels</string>
     <string name="title_activity_nav_lugares">Places</string>
     <string name="title_activity_nav_restaurantes">Restaurants</string>
     <string name="title_activity_nav_perfil">Profile</string>
-    <string name="title_activity_nav_festivales">Festivals</string>
-    <string name="title_activity_fest1">Festivals</string>
-    <string name="title_activity_fest2">Festivals</string>
-    <string name="title_activity_fest3">Festivals</string>
+    <string name="title_activity_nav_festivales">News and Events</string>
+    <string name="title_activity_fest1">Events</string>
+    <string name="title_activity_fest2">Events</string>
+    <string name="title_activity_fest3">Events</string>
     <string name="Interes1">Dia de los Diablitos</string>
     <string name="desInteres1">El 28 de diciembre.</string>
     <string name="fechaInteres1">Diciembre</string>
-    <string name="Festivales">Festivals</string>
+    <string name="Festivales">Events</string>
     <string name="Santa">Semana Santa</string>
     <string name="Diablitos">Festival de los Diablitos</string>
-    <string name="TDiablitos">del 22 al 31 de diciembre se celebran las fiestas tradicionales de los diablitos. Estas fiestas datan de 1653 y su inicio se dio en una época en la cual el municipio estaba dividido en grandes haciendas, trabajadas por esclavos que disponían de un solo día de descanso anual, que normamente era el 28 de diciembre.</string>
-    <string name="holly">Según se deduce de la lectura de lo que nos dejaron escrito los viejos historiadores, la traída de imágenes y vida de personajes, bien parece que los orígenes de procesiones de la semana santa se remonta a la mitad del siglo XVII, tiempo en que se fueron organizando paulatinamente a medida que se conformaban cofradías y se levantaban altares en los templos dedicados a los santos.</string>
+    <string name="TDiablitos">From december 22 to 31 its celebrated the traditional festival of diablitos. This party comes since 1653 and its born was because it that age the town was divided in big hauses, where slaves worked and just had one day for rest at the year, normally that day was december 28.</string>
+    <string name="holly">As we can deduce from the lecture of our ancester papers, the arrive of the pictures and life of the characters, you can see that the origin of the parades comes from the half of the XVII century, time when everything was going organized at the time that the poblation and the churches growl up.</string>
     <string name="Tamarindos">Festival de los Tamarindos</string>
-    <string name="TTamarindos">Las fiestas del tamarindo se llevan a cabo todos los años en los municipios de occidente, donde la alegria y los grandes eventos se toman las calles florecientes y amarillas por los frutos de la tierra.</string>
+    <string name="TTamarindos">The tamarind festivals takes place every year in the occident towns, where the happyness and the big events take the fluorecent and yellow streets because of the fruits of the earth .</string>
+    <string name="title_activity_mapa">Map</string>
+    <string name="title_activity_mapa_w">MapaWActivity</string>
+    <string name="intro_text">Long click to exit the map.</string>
+    <string name="saludo">In Santa Fe de Antioquia you can find:</string>
+    <string name="Ubicate">Where am i?</string>
+
+    <string name="Dessanta">With more than 350 years, its one of the most beautiful and solemn in the country.</string>
+    <string name="Destama">Every year in august come to the occident and celebrate the nature.</string>
+    <string name="Desdiablo">From december 22 to 31, its celebrated this traditional festival.</string>
+    <string name="Abril">April</string>
+    <string name="Agosto">August</string>
+    <string name="Diciembre">December</string>
 
 </resources>

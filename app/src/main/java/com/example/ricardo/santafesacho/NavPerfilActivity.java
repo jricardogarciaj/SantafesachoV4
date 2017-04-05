@@ -24,6 +24,7 @@ public class NavPerfilActivity extends AppCompatActivity
     //TextView tPassword;
     TextView tCorreo, eCorreo, eUsuario;
     String username, correo, password;
+    int codigo=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -130,7 +131,7 @@ public class NavPerfilActivity extends AppCompatActivity
         else if (id == R.id.mFestivales) {
             intent= new Intent(NavPerfilActivity.this, NavFestivalesActivity.class);
             intent.putExtra("username",username);
-            intent.putExtra("email",correo);
+            intent.putExtra("correo",correo);
             startActivity(intent);
             finish();
         }
@@ -150,10 +151,11 @@ public class NavPerfilActivity extends AppCompatActivity
             startActivity(intent);
             finish();
         }
-        else if (id == R.id.mPerfil) {
+        else if (id == R.id.mUbicate) {
             intent = new Intent(NavPerfilActivity.this, NavDrawerActivity.class);
             intent.putExtra("username", username);
             intent.putExtra("correo", correo);
+            intent.putExtra("codigo",codigo);
             startActivity(intent);
             finish();
         }

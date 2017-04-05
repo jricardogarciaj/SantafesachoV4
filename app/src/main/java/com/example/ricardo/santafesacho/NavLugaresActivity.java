@@ -30,6 +30,7 @@ public class NavLugaresActivity extends AppCompatActivity
     String username, correo, password;
     Intent intent;
     TextView eUsuario,eCorreo;
+    int codigo=0, seltab=0;
 
     private SectionsPagerAdapter mSectionsPagerAdapter;
 
@@ -47,23 +48,50 @@ public class NavLugaresActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });*/
-
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        final TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                seltab = tabLayout.getSelectedTabPosition();
+
+                switch (seltab){
+
+                    case 0:
+                        codigo = 1;
+                        intent= new Intent(NavLugaresActivity.this, NavDrawerActivity.class);
+                        intent.putExtra("username",username);
+                        intent.putExtra("correo",correo);
+                        intent.putExtra("codigo",codigo);
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        codigo = 2;
+                        intent= new Intent(NavLugaresActivity.this, NavDrawerActivity.class);
+                        intent.putExtra("username",username);
+                        intent.putExtra("correo",correo);
+                        intent.putExtra("codigo",codigo);
+                        startActivity(intent);
+                        break;
+                    case 2:
+                        codigo = 1;
+                        intent= new Intent(NavLugaresActivity.this, NavDrawerActivity.class);
+                        intent.putExtra("username",username);
+                        intent.putExtra("correo",correo);
+                        intent.putExtra("codigo",codigo);
+                        startActivity(intent);
+                        break;
+                }
+            }
+        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -126,10 +154,12 @@ public class NavLugaresActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.mMain) {
+        if (id == R.id.mUbicate) {
+            codigo = 0;
             intent= new Intent(NavLugaresActivity.this, NavDrawerActivity.class);
             intent.putExtra("username",username);
             intent.putExtra("correo",correo);
+            intent.putExtra("codigo",codigo);
             startActivity(intent);
             finish();
         }
@@ -145,7 +175,7 @@ public class NavLugaresActivity extends AppCompatActivity
         else if (id == R.id.mFestivales) {
             intent= new Intent(NavLugaresActivity.this, NavFestivalesActivity.class);
             intent.putExtra("username",username);
-            intent.putExtra("email",correo);
+            intent.putExtra("correo",correo);
             startActivity(intent);
             finish();
         }

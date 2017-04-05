@@ -31,6 +31,7 @@ public class NavHotelActivity extends AppCompatActivity
     String username, correo, password;
     Intent intent;
     TextView eUsuario,eCorreo;
+    int codigo=0, seltab=0;
 
     private SectionsPagerAdapter mSectionsPagerAdapter;
 
@@ -47,23 +48,50 @@ public class NavHotelActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });*/
-
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        final TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                seltab = tabLayout.getSelectedTabPosition();
+
+                switch (seltab){
+
+                    case 0:
+                        codigo = 3;
+                        intent= new Intent(NavHotelActivity.this, NavDrawerActivity.class);
+                        intent.putExtra("username",username);
+                        intent.putExtra("correo",correo);
+                        intent.putExtra("codigo",codigo);
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        codigo = 4;
+                        intent= new Intent(NavHotelActivity.this, NavDrawerActivity.class);
+                        intent.putExtra("username",username);
+                        intent.putExtra("correo",correo);
+                        intent.putExtra("codigo",codigo);
+                        startActivity(intent);
+                        break;
+                    case 2:
+                        codigo = 5;
+                        intent= new Intent(NavHotelActivity.this, NavDrawerActivity.class);
+                        intent.putExtra("username",username);
+                        intent.putExtra("correo",correo);
+                        intent.putExtra("codigo",codigo);
+                        startActivity(intent);
+                        break;
+                }
+            }
+        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -125,10 +153,12 @@ public class NavHotelActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.mMain) {
+        if (id == R.id.mUbicate) {
+            codigo = 0;
             intent= new Intent(NavHotelActivity.this, NavDrawerActivity.class);
             intent.putExtra("username",username);
             intent.putExtra("correo",correo);
+            intent.putExtra("codigo",codigo);
             startActivity(intent);
             finish();
         }
@@ -217,11 +247,11 @@ public class NavHotelActivity extends AppCompatActivity
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "Hotel Colonial";
+                    return "Colonial";
                 case 1:
-                    return "Hotel Mariscal Robledo";
+                    return "Mariscal Robledo";
                 case 2:
-                    return "Hotel Porton Del Sol";
+                    return "Porton Del Sol";
             }
             return null;
         }

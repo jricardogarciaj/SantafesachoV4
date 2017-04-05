@@ -24,8 +24,18 @@
         android:textSize="18dp"
         android:gravity="center"
         android:background="@color/white"
-        android:textColor="@color/green"
+        android:textColor="@color/black"
         />
+    <!--<TextView
+        android:id="@+id/vermapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/verenmapa"
+        android:textStyle="italic"
+        android:textSize="16dp"
+        android:textColor="@color/green"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp"/>-->
 
     <ImageView
         android:layout_weight="1"

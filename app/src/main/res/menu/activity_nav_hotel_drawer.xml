@@ -3,9 +3,9 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/mMain"
-            android:title="@string/Main"
-            android:icon="@drawable/imain"/>
+            android:id="@+id/mFestivales"
+            android:title="@string/Festivales"
+            android:icon="@drawable/ieventos"/>
         <item
             android:id="@+id/mRestaurantes"
             android:title="@string/Restaurantes"
@@ -15,9 +15,9 @@
             android:title="@string/Lugares"
             android:icon="@drawable/ilugares"/>
         <item
-            android:id="@+id/mFestivales"
-            android:title="@string/Festivales"
-            android:icon="@drawable/ibar"/>
+            android:id="@+id/mUbicate"
+            android:title="@string/Ubicate"
+            android:icon="@drawable/iubicate"/>
     </group>
 
     <group android:checkableBehavior="single">

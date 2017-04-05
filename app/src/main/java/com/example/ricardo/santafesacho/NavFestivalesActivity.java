@@ -3,6 +3,7 @@ package com.example.ricardo.santafesacho;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.DataSetObserver;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -34,12 +35,16 @@ public class NavFestivalesActivity extends AppCompatActivity
 
     String username,correo;
     TextView eUsuario,eCorreo;
+    int codigo=0;
+
+    SharedPreferences pref;
+    SharedPreferences.Editor editor;
 
     Intent intent;
     FestivalesC[] datos = new FestivalesC [] {
-            new FestivalesC(R.drawable.tama, "Dia de los Diablitos" , "Diciembre"," del 22 al 31 de diciembre se celebran las fiestas tradicionales de los diablitos."),
-            new FestivalesC(R.drawable.santa,"Semana Santa","Abril", "Con más de 350 años, la Semana Santa mayor de la Ciudad Madre es la más antigua del departamento y una de las más solemnes y bellas de todo el país."),
-            new FestivalesC(R.drawable.tamar,"Festival del Tamarindo","Agosto","Acontecida anualmente en el occidente en el mes de Agosto.")
+            //new FestivalesC(R.drawable.santa,"Semana Santa","Abril", "Con más de 350 años, es una de las más solemnes y bellas de todo el país."),
+            //new FestivalesC(R.drawable.tamar,"Festival del Tamarindo","Agosto","Acontecida anualmente en el occidente en el mes de Agosto."),
+            //new FestivalesC(R.drawable.tama, "Dia de los Diablitos" , "Diciembre","Del 22 al 31 de diciembre se celebran las fiestas tradicionales de los diablitos.")
     };
 
     ListView lista;
@@ -52,6 +57,15 @@ public class NavFestivalesActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        pref=getSharedPreferences("MisPreferencias", MODE_PRIVATE);
+        editor=pref.edit();
+
+        datos = new FestivalesC [] {
+                new FestivalesC(R.drawable.santa,"Semana Santa", this.getString(R.string.Abril), this.getString(R.string.Dessanta)),
+                new FestivalesC(R.drawable.tamar,"Festival del Tamarindo",this.getString(R.string.Agosto),this.getString(R.string.Destama)),
+                new FestivalesC(R.drawable.tama, "Dia de los Diablitos" , this.getString(R.string.Diciembre),this.getString(R.string.Desdiablo))
+        };
+
         Adapter adapter = new Adapter(this, datos);
 
         lista = (ListView) findViewById(R.id.Lista);
@@ -61,8 +75,8 @@ public class NavFestivalesActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         View hView = navigationView.getHeaderView(0);
 
-        eUsuario = (TextView) hView.findViewById(R.id.lsusuario);
-        eCorreo = (TextView) hView.findViewById(R.id.lscorreo);
+        eUsuario = (TextView) hView.findViewById(R.id.feusuario);
+        eCorreo = (TextView) hView.findViewById(R.id.fecorreo);
 
         Bundle extras = getIntent().getExtras();
         eUsuario.setText(extras.getString("username"));
@@ -81,26 +95,23 @@ public class NavFestivalesActivity extends AppCompatActivity
                 switch(position) {
 
                     case 0:
-                        intent = new Intent(NavFestivalesActivity.this, Fest1Activity.class);
-                        intent.putExtra("username",username);
-                        intent.putExtra("correo",correo);
-                        startActivity(intent);
-                        finish();
-                        break;
-
-                    case 1:
                         intent = new Intent(NavFestivalesActivity.this, Fest2Activity.class);
                         intent.putExtra("username",username);
                         intent.putExtra("correo",correo);
                         startActivity(intent);
-                        finish();
                         break;
-                    case 2:
+
+                    case 1:
                         intent = new Intent(NavFestivalesActivity.this, Fest3Activity.class);
                         intent.putExtra("username",username);
                         intent.putExtra("correo",correo);
                         startActivity(intent);
-                        finish();
+                        break;
+                    case 2:
+                        intent = new Intent(NavFestivalesActivity.this, Fest1Activity.class);
+                        intent.putExtra("username",username);
+                        intent.putExtra("correo",correo);
+                        startActivity(intent);
                         break;
                     default:
                 }
@@ -183,10 +194,11 @@ public class NavFestivalesActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.mMain) {
+        if (id == R.id.mUbicate) {
             intent= new Intent(NavFestivalesActivity.this, NavDrawerActivity.class);
             intent.putExtra("username",username);
             intent.putExtra("correo",correo);
+            intent.putExtra("codigo",codigo);
             startActivity(intent);
             finish();
         }
@@ -199,13 +211,13 @@ public class NavFestivalesActivity extends AppCompatActivity
             finish();
         }
 
-        /*else if (id == R.id.mBares) {
-            intent= new Intent(NavDrawerActivity.this, BarActivity.class);
+        else if (id == R.id.mLugares) {
+            intent= new Intent(NavFestivalesActivity.this, NavLugaresActivity.class);
             intent.putExtra("username",username);
-            intent.putExtra("email",correo);
+            intent.putExtra("correo",correo);
             startActivity(intent);
             finish();
-        }*/
+        }
 
         else if (id == R.id.mRestaurantes) {
             intent= new Intent(NavFestivalesActivity.this, NavRestaurantesActivity.class);
@@ -216,6 +228,8 @@ public class NavFestivalesActivity extends AppCompatActivity
         }
 
         else if (id == R.id.mLogOut) {
+            editor.putInt("login",-1); //1 ya logueado 0 no logeado
+            editor.commit();
             intent = new Intent(NavFestivalesActivity.this, LoginActivity.class);
             intent.putExtra("username", username);
             intent.putExtra("correo", correo);
